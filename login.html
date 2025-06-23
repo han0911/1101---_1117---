@@ -1,33 +1,39 @@
+
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
+<head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>로그인창</title>
     <link rel="stylesheet" href="../css/login.css" />
-  </head>
-  <body>
-    <form class="Login">
-      <div id="nameModal" class="modal">
-        <div class="modal-content">
-          <p>이름을 입력해주세요</p>
-          <input type="text" id="username" placeholder="이름 입력" required />
+</head>
+<body>
+    <form class="login-form" id="loginForm">
+        <div class="modal">
+            <p>이름을 입력해주세요</p>
+            <input type="text" id="username" placeholder="이름 입력" required />
         </div>
-      </div>
-      <div class="modal">
-        <p>주민번호를 입력해주세요</p>
-        <input type="password" id="user" placeholder="주민번호 입력" required />
-      </div>
-      <div class="back">
-        <label class="private"
-          ><input type="checkbox" checked required />개인정보 동의하기
-      </div>
-      <div class="start">
-        <button type="button" id="bu" onclick="Goback()">
-          <b>시작하기</b>
-        </button>
-      </div>
+        <div class="modal">
+            <p>전화번호를 입력해주세요</p>
+            <input type="text" id="username2" placeholder="전화번호 입력" required />
+        </div>
+        <div class="modal">
+            <p>주민번호를 입력해주세요</p>
+            <input type="password" id="user" placeholder="주민번호 입력" required />
+        </div>
+        <div class="back">
+            <label class="private">
+                <input type="checkbox" checked required />
+                개인정보 동의하기
+            </label>
+        </div>
+        <div class="start">
+            <button type="button" id="restart" onclick="BACK()">되돌아가기</button>
+            <button type="button" id="bu" class="btn-green" onclick="Goback()">시작하기</button>
+        </div>
     </form>
+
     <script src="../js/login.js"></script>
-  </body>
+</body>
 </html>
+
